@@ -51,9 +51,9 @@ First: `npm install`
 Open a node.js shell (`node`) run:
 
 ```javascript
-> var Client = require('./client.js')
+> var Client = require('./client.js');
 undefined
 > var client = new Client(<your_environment>);
 undefined
-> client.bootstrap(<your_namespace>, 'user-osf-<your-osf-guid>')
+> client.bootstrap(<your_namespace>, 'user-osf-<your-osf-guid>');
 ```

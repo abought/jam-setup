@@ -38,9 +38,9 @@ var Client = function(env) {
             console.log('Bootstrapping ', namespace);
             collections.forEach(function(col) {
                 console.log('Bootstrapping collection: ', col.id);
-                ns.getOrCreate(namespace + '.' + col.id, col.attrs).then(function(collection) {
-                    console.log('Updating collection: ', col.id);
-                    collection.update(col.attrs);
+                ns.getOrCreate(col.id, col.attrs).then(function(collection) {
+                    //console.log('Updating collection: ', col.id);
+                    //collection.update(col.attrs);
                 });
             });
         });

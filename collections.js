@@ -1,8 +1,8 @@
 /* jshint node: true, esnext: true */
 
-var CREATE = 'CREATE';
-var UPDATE = 'UPDATE';
-var READ = 'READ';
+const CREATE = 'CREATE';
+const UPDATE = 'UPDATE';
+const READ = 'READ';
 
 module.exports = [{
     id: 'experiments',
